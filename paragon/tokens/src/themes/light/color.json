@@ -18,9 +18,9 @@
         "$description": "Primary color of level 100."
       },
       "base": {
-        "$value": "#15376D",
+        "$value": "#034EA2",
         "source": "$primary",
-        "$description": "Basic primary color."
+        "$description": "Basic primary color (HUIT brand blue)."
       },
       "light": {
         "$value": "#F2F7F8",
