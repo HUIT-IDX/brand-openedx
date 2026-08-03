@@ -955,7 +955,7 @@
 @custom-media --pgn-size-breakpoint-max-width-xl (max-width: 1400px);
 @custom-media --pgn-size-breakpoint-min-width-xxl (min-width: 1400px);
 body, .text-monospace, * {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
