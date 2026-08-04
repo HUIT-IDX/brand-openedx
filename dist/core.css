@@ -1510,7 +1510,7 @@ body {
 #root header.site-header-desktop .container-fluid {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 12px 15px;
 }
 #root header.site-header-desktop .secondary-menu-container .nav-link:hover,
 #root header.site-header-desktop .secondary-menu-container .nav-link:focus,
@@ -4610,7 +4610,7 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .container-fluid {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 12px 15px;
 }
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link:hover,
 [data-paragon-theme-variant=dark] #root header.site-header-desktop .secondary-menu-container .nav-link:focus,
