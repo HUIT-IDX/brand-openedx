@@ -1249,9 +1249,6 @@ body {
 #root .sequence-container .sequence .unit-navigation {
   max-width: 226px;
 }
-#root .sequence-container .sequence .unit-navigation button svg, #root .sequence-container .sequence .unit-navigation a svg {
-  display: none;
-}
 #root .unit-container {
   max-width: 100% !important;
 }
