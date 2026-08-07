@@ -1247,7 +1247,13 @@ body {
   color: var(--pgn-color-primary-base) !important;
 }
 #root .sequence-container .sequence .unit-navigation {
-  max-width: 226px;
+  width: fit-content;
+  max-width: 100%;
+}
+#root .sequence-container .sequence .unit-navigation .previous-button,
+#root .sequence-container .sequence .unit-navigation .next-button {
+  flex: 1 1 0;
+  white-space: nowrap;
 }
 #root .unit-container {
   max-width: 100% !important;

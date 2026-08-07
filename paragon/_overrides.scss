@@ -351,12 +351,19 @@ body {
                 }
             }
             .unit-navigation {
-                max-width: 226px;
-                // button, a {
-                //     svg {
-                //         display: none;
-                //     }
-                // }
+                // Nhãn tiếng Việt ("Tiếp theo", "Bài trước") dài hơn bản tiếng
+                // Anh nên rớt dòng trong khung cố định 226px. Thay vì cắt cứng
+                // bề ngang, cho hàng nút co theo nội dung rồi bắt hai nút chia
+                // đôi phần đó: cả hai bằng đúng nhãn dài hơn, không nút nào
+                // xuống dòng, và tự đúng với mọi ngôn ngữ về sau.
+                width: fit-content;
+                max-width: 100%;
+
+                .previous-button,
+                .next-button {
+                    flex: 1 1 0;
+                    white-space: nowrap;
+                }
             }
         }
     }
