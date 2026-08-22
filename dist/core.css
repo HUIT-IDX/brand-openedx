@@ -3256,6 +3256,30 @@ section .pt-4 > .mx-0.row[tabindex] {
 .pgn__searchfield .form-control {
   border: 1px solid;
 }
+dialog.courseware-search {
+  --pgn-color-brand-100: var(--pgn-color-primary-100);
+  --pgn-color-brand-200: var(--pgn-color-primary-200);
+  --pgn-color-brand-300: var(--pgn-color-primary-300);
+  --pgn-color-brand-400: var(--pgn-color-primary-400);
+  --pgn-color-brand-500: var(--pgn-color-primary-500);
+  --pgn-color-brand-600: var(--pgn-color-primary-600);
+  --pgn-color-brand-700: var(--pgn-color-primary-700);
+  --pgn-color-brand-800: var(--pgn-color-primary-800);
+  --pgn-color-brand-900: var(--pgn-color-primary-900);
+  --pgn-color-brand-base: var(--pgn-color-primary-base);
+}
+dialog.courseware-search .pgn__searchfield__button {
+  border: 1px solid var(--pgn-color-primary-base);
+}
+dialog.courseware-search .pgn__searchfield__button:hover {
+  border-color: var(--pgn-color-theme-hover-primary);
+}
+dialog.courseware-search .pgn__searchfield__button:active {
+  border-color: var(--pgn-color-theme-active-primary);
+}
+dialog.courseware-search .btn:focus:not(:focus-visible)::before {
+  display: none;
+}
 #root #courseTabsNavigation {
   padding: 20px 15px !important;
   max-width: 1600px;
@@ -6444,6 +6468,30 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 }
 [data-paragon-theme-variant=dark] .pgn__searchfield .form-control {
   border: 1px solid;
+}
+[data-paragon-theme-variant=dark] dialog.courseware-search {
+  --pgn-color-brand-100: var(--pgn-color-primary-100);
+  --pgn-color-brand-200: var(--pgn-color-primary-200);
+  --pgn-color-brand-300: var(--pgn-color-primary-300);
+  --pgn-color-brand-400: var(--pgn-color-primary-400);
+  --pgn-color-brand-500: var(--pgn-color-primary-500);
+  --pgn-color-brand-600: var(--pgn-color-primary-600);
+  --pgn-color-brand-700: var(--pgn-color-primary-700);
+  --pgn-color-brand-800: var(--pgn-color-primary-800);
+  --pgn-color-brand-900: var(--pgn-color-primary-900);
+  --pgn-color-brand-base: var(--pgn-color-primary-base);
+}
+[data-paragon-theme-variant=dark] dialog.courseware-search .pgn__searchfield__button {
+  border: 1px solid var(--pgn-color-primary-base);
+}
+[data-paragon-theme-variant=dark] dialog.courseware-search .pgn__searchfield__button:hover {
+  border-color: var(--pgn-color-theme-hover-primary);
+}
+[data-paragon-theme-variant=dark] dialog.courseware-search .pgn__searchfield__button:active {
+  border-color: var(--pgn-color-theme-active-primary);
+}
+[data-paragon-theme-variant=dark] dialog.courseware-search .btn:focus:not(:focus-visible)::before {
+  display: none;
 }
 [data-paragon-theme-variant=dark] #root #courseTabsNavigation {
   padding: 20px 15px !important;
