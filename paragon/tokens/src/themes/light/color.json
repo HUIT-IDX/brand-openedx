@@ -28,6 +28,13 @@
         "$description": "Light primary color."
       }
     },
+    "dark": {
+      "base": {
+        "$value": "#023771",
+        "source": "$dark",
+        "$description": "Dark surface color (fullscreen modal header, bg-dark). Paragon mặc định là #273F2F xanh rêu, lệch tông xanh HUIT."
+      }
+    },
     "text": {
       "base": {
         "$value": "#111827",

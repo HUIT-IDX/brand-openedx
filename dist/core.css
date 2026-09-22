@@ -954,7 +954,7 @@
 @custom-media --pgn-size-breakpoint-min-width-xl (min-width: 1200px);
 @custom-media --pgn-size-breakpoint-max-width-xl (max-width: 1400px);
 @custom-media --pgn-size-breakpoint-min-width-xxl (min-width: 1400px);
-body, .text-monospace, * {
+body, .text-monospace, *:not(.fa):not([class*=fa-]) {
   font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

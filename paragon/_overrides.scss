@@ -3,7 +3,11 @@
 // Font mặc định của indigo là Inter; HUIT dùng Roboto. Đổi ngay tại nguồn vì
 // core.min.css sinh ra từ đây được bake vào image MFE — nếu để Inter thì biến
 // thể light.min.css phải đánh nhau bằng specificity để giành lại Roboto.
-body, .text-monospace, * {
+// Loại trừ phần tử icon-font khỏi luật `*`: `!important` ở đây đè luôn
+// `font-family` mà thư viện icon tự đặt cho chính nó (Font Awesome 4 đóng gói
+// trong các MFE dùng `font: ... FontAwesome` qua class .fa/.fa-*), làm glyph rơi
+// về Roboto và hiện thành ô vuông rỗng ở mọi MFE lẫn LMS.
+body, .text-monospace, *:not(.fa):not([class*="fa-"]) {
     font-family: 'Roboto', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
