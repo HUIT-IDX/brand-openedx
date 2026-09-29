@@ -37,6 +37,7 @@ z-index: 3 !important;
     .nav-item {
         &:first-of-type {
           .nav-link {
+            border-left: 0 !important;
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
           }
@@ -77,12 +78,21 @@ z-index: 3 !important;
       display: none !important;
     }
     .btn.btn-brand {
-    padding: 9px 17px;
-    font-size: 16px;
-    line-height: 22px;
+    --pgn-btn-bg: var(--pgn-color-btn-bg-primary);
+    --pgn-btn-border-color: var(--pgn-color-btn-border-primary);
+    --pgn-btn-hover-bg: var(--pgn-color-btn-hover-bg-primary);
+    --pgn-btn-hover-border-color: var(--pgn-color-btn-hover-border-primary);
+    --pgn-btn-active-bg: var(--pgn-color-btn-active-bg-primary);
+    --pgn-btn-active-border-color: var(--pgn-color-btn-active-border-primary);
+    --pgn-btn-focus-bg: var(--pgn-color-btn-focus-bg-primary);
+    --pgn-btn-focus-border-color: var(--pgn-color-btn-focus-border-primary);
+    --pgn-btn-focus-outline-color: var(--pgn-color-btn-focus-outline-primary);
+    height: 38px;
+    padding: 9px 16px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 500;
     border-radius: 6px;
-    background: var(--pgn-color-primary-base);
     margin: 0 0 0 12px;
     white-space: nowrap;
     }
@@ -91,12 +101,17 @@ z-index: 3 !important;
     background: var(--pgn-color-primary-light);
     border-radius: 6px;
     overflow: hidden;
+    height: 38px;
     @media (--pgn-size-breakpoint-max-width-sm) {
         width: 100%;
     }
 
+    &:hover {
+      box-shadow: inset 0 0 0 1px #D1D5DB;
+    }
     &.has-focus {
-      outline: 2px auto -webkit-focus-ring-color;
+      background: var(--pgn-color-white);
+      box-shadow: inset 0 0 0 1px var(--pgn-color-primary-base);
     }
     &:after {
         display: none !important;
@@ -106,8 +121,11 @@ z-index: 3 !important;
         flex-flow: row-reverse;
         border: none;
         border-radius: 6px;
+        height: 100%;
         .form-control {
-            background: var(--pgn-color-primary-light) !important;
+            background: transparent !important;
+            border: 0;
+            height: 100%;
             padding-left: 0;
             font-size: 14px;
             &:focus{
@@ -138,8 +156,12 @@ width: 100%;
     max-width: 35% !important;
     width: 100% !important;
     min-width: 290px !important;
+    box-shadow: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px 0 0 6px;
     @media (--pgn-size-breakpoint-max-width-sm) {
     max-width: 100% !important;
+    border-radius: 6px;
     }
     .pgn-transition-replace-group {
     .collapsible-body {
@@ -165,6 +187,7 @@ width: 100%;
 }
 .d-flex.bg-light-400.flex-column {
     max-width: 65%;
+    border-radius: 0 6px 6px 0;
     @media (--pgn-size-breakpoint-max-width-sm) {
     max-width: 100%;
     }
