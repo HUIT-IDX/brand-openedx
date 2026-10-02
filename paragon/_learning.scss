@@ -295,3 +295,26 @@ dialog.courseware-search {
     }
   }
 }
+
+.outline-sidebar {
+    svg[data-testid="dashed-circle-icon"] {
+        circle:first-child {
+            stroke: #3B82F6;
+            stroke-dasharray: none;
+            fill: #DBEAFE;
+        }
+        circle:last-child {
+            stroke: #023E82;
+            stroke-width: 6;
+        }
+    }
+    svg.text-gray-300 {
+        color: #6B7280 !important;
+    }
+    li.bg-info-100,
+    .course-sidebar-section > .btn.bg-info-100 {
+        background-color: #DBEAFE !important;
+        box-shadow: inset 4px 0 0 var(--pgn-color-primary-base);
+        font-weight: 600;
+    }
+}
