@@ -3284,14 +3284,19 @@ dialog.courseware-search .pgn__searchfield__button:active {
 dialog.courseware-search .btn:focus:not(:focus-visible)::before {
   display: none;
 }
+.outline-sidebar svg[data-testid=dashed-circle-icon] circle {
+  r: 15.9155px;
+  fill: none;
+  stroke-width: 4;
+}
 .outline-sidebar svg[data-testid=dashed-circle-icon] circle:first-child {
-  stroke: #3B82F6;
+  stroke: #93C5FD;
   stroke-dasharray: none;
-  fill: #DBEAFE;
 }
 .outline-sidebar svg[data-testid=dashed-circle-icon] circle:last-child {
-  stroke: #023E82;
-  stroke-width: 6;
+  stroke: var(--pgn-color-primary-base);
+  stroke-dashoffset: 25;
+  stroke-linecap: round;
 }
 .outline-sidebar svg.text-gray-300 {
   color: #6B7280 !important;
@@ -6569,14 +6574,19 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 [data-paragon-theme-variant=dark] dialog.courseware-search .btn:focus:not(:focus-visible)::before {
   display: none;
 }
+[data-paragon-theme-variant=dark] .outline-sidebar svg[data-testid=dashed-circle-icon] circle {
+  r: 15.9155px;
+  fill: none;
+  stroke-width: 4;
+}
 [data-paragon-theme-variant=dark] .outline-sidebar svg[data-testid=dashed-circle-icon] circle:first-child {
-  stroke: #3B82F6;
+  stroke: #93C5FD;
   stroke-dasharray: none;
-  fill: #DBEAFE;
 }
 [data-paragon-theme-variant=dark] .outline-sidebar svg[data-testid=dashed-circle-icon] circle:last-child {
-  stroke: #023E82;
-  stroke-width: 6;
+  stroke: var(--pgn-color-primary-base);
+  stroke-dashoffset: 25;
+  stroke-linecap: round;
 }
 [data-paragon-theme-variant=dark] .outline-sidebar svg.text-gray-300 {
   color: #6B7280 !important;
